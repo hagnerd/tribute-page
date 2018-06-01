@@ -1,5 +1,118 @@
+html {
+  font-size: 1em;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Merriweather Sans', sans-serif;
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 {
+  font-size: 2.827em;
+}
+
+h3 {
+  font-size: 1.999em;
+}
+
+h4 {
+  font-size: 1.414em;
+}
+
+small, .text--small {
+  font-size: 0.707em;
+}
+
+.main {
+  margin: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-rows: auto auto auto 100px;
+  grid-template-areas: 
+    "header header header"
+    ". middle ."
+    "main main main"
+    "footer footer footer";
+}
+
+.top-bar {
+  grid-area: header;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-bar--title {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #CE4435; 
+  height: 100%;
+}
+
+.text--subheader {
+  color: rgb(69, 73, 80);
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.414em;
+  font-style: italic;
+}
+
+.image--section {
+  grid-area: middle;
+  justify-self: center;
+  width: 100%;
+}
+
+.text--image-caption {
+  color: rgb(69, 73, 80);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
 .image--responsive {
   max-width: 100%;
   display: block;
   height: auto;
+}
+
+.tribute--content-section {
+  grid-area: main;
+  justify-self: center;
+  width: 70%;
+}
+
+.footer {
+  grid-area: footer;
+  justify-self: center;
+}
+
+.link {
+  border-bottom: 3px solid #FDFD7E;
+  text-decoration: none;
+  color: rgb(69, 73, 80);
+  transition: all 1s ease;
+}
+
+.link:hover {
+  background-color: #FDFD7E;
 }
