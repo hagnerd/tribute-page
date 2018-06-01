@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My Tribute Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
   <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 </head>
@@ -15,21 +16,58 @@
   <main id="main" class="main">
 
     <div class="top-bar">
-      <h1 id="title">
+      <h1 id="title" class="top-bar--title">
         <strong>Stanley Martin Lieber</strong>
       </h1>
       <p class="text--subheader">A.k.a. Stan Lee: The prolific comic-book writer.</p>
     </div>
 
-    <div id="img-div">
-      <img id="image" src="" alt="" class="image--responsive" />
-      <p id="img-caption" class="text--image-caption">I am an image caption.</p>
+    <div id="img-div" class="image--section">
+      <img id="image" src="https://pmcvariety.files.wordpress.com/2018/04/stan-lee.jpg?w=1000&h=562&crop=1" alt="Stan Lee smiling and waving"
+        class="image--responsive" />
+      <p id="img-caption" class="text--image-caption">Stan Lee Smiling and Waving</p>
     </div>
 
-    <section id="tribute-info">
-      Text describing the subject of the page
-      <a href="https://www.google.com" id="tribute-link" target="_blank">external link.</a>
+    <section id="tribute-info" class="tribute--content-section">
+      <section class="tribute--content-early-life">
+        <h2>Early Life</h2>
+        <p>Stan Lee was born as Stanley Martin Lieber in Manhattan, New York just three days after Christmas on December 28th,
+          1922. Stan grew up in a Romanian-Jewish family that strugged during the Great Depression. He found his escape in
+          reading books, and watching movies. Particularly those revolving around a
+          <em>hero</em>.
+        </p>
+      </section>
+      <section class="tribute--content-early-career">
+        <h2>Early Career</h2>
+        <p>Stan Lee dreamed of being a writer. So his uncle helped him get a job at Timely Comics, as an assistant. Most of
+          his work involved making sure the artists were fed and pampered so they could work.</p>
+        <p>He made his writing debut with a filler story about Captain America, who we all now know and love. Shortly after
+          this, due to internal politics, Lee who was only 19 at the time, was made editor for Timely Comics. Stan enlisted
+          in the US Army and served from 1942 to 1945.</p>
+      </section>
+      <section class="tribute--golden-age">
+        <h2>The Golden Age</h2>
+        <p>After returning from service, Lee continued at his position as editor, but began writing Romance, Westerns, comedy,
+          and Sci-fi. He was feeling unfulfilled at his job, and was considering quitting...</p>
+        <p>At this time in a parallel universe (the D.C. Comics Universe) superhero comics were beginning to take off. Martin
+          Goodman, who was running Timely, wanted Stan Lee to come up with his own stable of superheroes to compete with
+          D.C. Comics.</p>
+        <p>Lee proved his writing chops, by focusing on fundamentally flawed and human characters, instead of the idealistically
+          perfect heroes who had come before. First Stan Lee and Jack Kirby created the Fantastic Four, then quickly after
+          the Hulk, Thor, Iron Man, the X-Men, Daredevil, Doctor Strange, and everyone's favorite webslinger, Spider-Man</p>
+      </section>
+      <section class="tribute--content-closing">
+        <h2>Closing</h2>
+        <p>Much to the disappointment of my highschool english teachers, most of my information came from Wikipedia. So if you'd
+          like to learn more about
+          <a href="https://en.wikipedia.org/wiki/Stan_Lee" id="tribute-link" target="_blank" class="link">Stan Lee, check out his page on Wikiepedia.</a>
+        </p>
+      </section>
     </section>
+
+    <footer class="footer">
+      <p>This website Tribute Page was made by <span class="link">Matt Hagner</span> with just plain old <span class="link">HTML</span> &amp; <span class="link">CSS</span>!</p>
+    </footer>
 
   </main>
 
